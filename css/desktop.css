@@ -1,0 +1,52 @@
+html, body{
+	height: 100%;
+}
+header, #content
+{
+	display:inline-block;
+	vertical-align:top;
+}
+header
+{
+	background:url(../img/logo.png) no-repeat center top 2%, #23262A;
+	margin:auto;
+	min-height: 100%;
+	padding-top:20%;
+	width:20%;
+	max-width: 300px;
+}
+nav ul
+{
+	margin:0 0 0 -8%;
+}
+nav li
+{
+	height:40px;
+	padding:7px 0;
+	text-align:left;
+	width:95.6%;
+}
+nav li:hover
+{
+	border-right:10px solid #E9E7E3;
+}
+nav li p
+{
+	color:#7B7B7B;
+	font-style: italic;
+	font-size:12px;
+	margin-top:-1px;
+}
+#content
+{	
+	width:77%;
+	max-width: 980px;
+}
+#servicios article
+{
+	display:inline-block;
+	height: 21.5em;
+	margin:auto;
+	vertical-align:top;
+	width:32%;
+}

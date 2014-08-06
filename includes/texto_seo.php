@@ -1,0 +1,4 @@
+<h1>Diseño y desarrollo web en Iquitos</h1>
+<p>En Innditec nos preocupamos por desarrollar páginas web de acuerdo a los requerimientos de precio, usabilidad, rendimiento y escalabilidad; landing pages, sitios web administrables, código optimizado para aparecer en los principales buscadores,te posicionamos en las redes sociales con tu propio fanpage, canales en youtube, cuenta en twitter y mucho mas.</p>
+<p>Cada diseño es único, cuidamos cada detalle de su página web para poder entregar un producto de calidad y conforme a sus requerimientos.</p>
+<p>Le ofrecemos una amplia variedad de opciones en materia de diseño y desarrollo web: Portales informativos, páginas web para municipios,  Instituciones Educativas, sitios web corporativos, blogs, landing pages (paginas de aterrizaje), estos y otros servicios más a su disposición</p>

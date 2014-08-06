@@ -1,0 +1,677 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"footer	Tag"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"desarro",
+				"desarrollo-web"
+			],
+			[
+				"es",
+				"ease-in"
+			],
+			[
+				"divi",
+				"division_entera"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"can",
+				"canfilinfo"
+			],
+			[
+				"ca",
+				"cabeceras"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"FONT",
+				"font-style"
+			],
+			[
+				"fnt",
+				"font-family"
+			],
+			[
+				"caviar",
+				"caviarbold"
+			],
+			[
+				"to",
+				"tonyman"
+			],
+			[
+				"he",
+				"head	Tag"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"X",
+				"XMLHttp"
+			],
+			[
+				"XM",
+				"XMLHttpRequest"
+			],
+			[
+				"opi",
+				"opinion"
+			],
+			[
+				"con",
+				"convalidaciones"
+			],
+			[
+				"ad",
+				"admision"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"bac",
+				"background-clip"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"incl",
+				"include"
+			],
+			[
+				"rsgaleria",
+				"rsgaleria"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font-we",
+				"font-weight"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"if",
+				"isFunction"
+			],
+			[
+				"se",
+				"section	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/base.css",
+			"settings":
+			{
+				"buffer_size": 7413,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2170,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php if (array_key_exists ('enviar', $_POST)) {\n      //script para procesar mail\n      $para ='anthonyramirez@innditec.com'. ', '; //utiliza tu propia dirección email\n      $asunto = 'enviado desde pagina de contacto';\n      //Lista de archivos que se esperan\n      $esperado = array('nombre', 'email', 'comentario');\n      //Configurar archivos obligatorios\n      $obligatorio = array('nombre', 'email', 'comentario');\n      //Crear un array vacío para cualquier archivo perdido\n      $perdido = array();\n      \n      //asume que no hay nada sospechoso\n      $sospechoso = false;\n      //crear un patrón para localizar frases sospechosas\n      $patron = '/Content-Type:|BCC:|CC:/i';\n      \n      // function para comprobar frases sospechosas\n     function esSospechoso($val, $patron, &$sospechoso) {\n    // si la variable es un array, loop a través de cada elemento\n    // y pasarlo recursivamente de vuelta a la misma función\n    if (is_array($val)) {\n      foreach ($val as $item) {\n        esSospechoso($item, $patron, $sospechoso);\n        }\n      }\n    else {\n      // si es encontrada una de las frases sospechosas, configurar Boolean a true\n      if (preg_match($patron, $val)) {\n        $sospechoso = true;\n        }\n      }\n    }\n    \n    //comprobar el array $_POST y todos los subarrays buscando contenido sospechoso\n    esSospechoso($_POST, $patron, $sospechoso);\n\n      if ($sospechoso) {\n        $enviarMail = false;\n        unset($perdido);\n        }\n      else {    \n      //Procesar las variables $_POST\n      foreach ($_POST as $key => $value) {\n      //asignar a variable temporalmente y vacía espacio blanco si no un array\n      $temp = is_array($value) ? $value : trim($value);\n      //si vacío y obligatorio, añadir a array $perdido\n      if (empty($temp) && in_array($key, $obligatorio)) {\n          array_push($perdido, $key);\n      }\n      //En otro caso, asignar a una variable del mismo nombre que $key\n      elseif (in_array($key, $esperado)) {\n      ${$key} = $temp;\n      }\n      }\n      }\n      \n      //validar la dirección email    \n      if (!empty($email)) {\n     // expresión regular para identificar caracteres ilegales en dirección email \n     $checkEmail = '/^[^@]+@[^\\s\\r\\n\\'\";,@%]+$/';\n     //rechazar la dirección email si no cumple la expresión regular\n     if (!preg_match($checkEmail, $email)) {\n     $sospechoso = true;\n     $enviarMail = false;\n     unset($perdido);\n     }\n      }\n      \n      //Seguir sólo si todos los campos requeridos están OK\n      if (!$sospechoso && empty($perdido)) {\n      \n      //Construir el mensaje\n      $mensaje = \"Nombre: $nombre\\n\\n\";\n      $mensaje .= \"Email: $email\\n\\n\";\n      $mensaje .= \"Comentario: $comentario\\n\\n\";\n      \n      //Limitar tamaño de línea a 70 caracteres\n      $mensaje = wordwrap($mensaje, 300);\n      \n      //crear cabeceras adicionales\n      $cabeceras ='From: Contacto<info@innditec.com>';\n      $cabeceras .='Cc: anthonyramirez@innditec.com';\n      if (!empty($email)) {\n       $cabeceras .= \"\\r\\nReply-To: $email\";\n       }\n      //Enviarlo\n      $enviarMail =  mail ($para, $asunto, $mensaje, $cabeceras );\n      if ($enviarMail) {\n      //$perdido deja de ser necesario si el email es enviado, así que lo destruimos con unset\n      unset($perdido);\n      }\n      }\n      }            \n?>",
+			"settings":
+			{
+				"buffer_size": 3304,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/ejecutarC#.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: Python"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"REPL",
+				"Set Syntax: Regular Expressions (Python)"
+			],
+			[
+				"repl",
+				"Set Syntax: Regular Expressions (Python)"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/AppServ/www/innditec.com/pydio/plugins/access.mysql/class.mysqlAccessDriver.php",
+		"/C/AppServ/www/innditec.com/pydio/conf/bootstrap_context.php",
+		"/C/AppServ/www/innditec.com/includes/redes_portada.php",
+		"/C/AppServ/www/innditec.com/css/desktop.css",
+		"/C/AppServ/www/innditec.com/css/html.html",
+		"/C/AppServ/www/innditec.com/css/responsiveslides.css",
+		"/C/AppServ/www/innditec.com/includes/form_portada.php",
+		"/C/AppServ/www/innditec.com/css/normalize.css",
+		"/C/AppServ/www/innditec.com/componentes/header.php",
+		"/C/AppServ/www/innditec.com/includes/nav.php",
+		"/C/AppServ/www/innditec.com/css/movil.css",
+		"/C/AppServ/www/innditec.com/index.php",
+		"/C/AppServ/www/innditec.com/js/flaco.js",
+		"/C/AppServ/www/innditec.com/componentes/metas.php",
+		"/C/AppServ/www/innditec.com/includes/servicios.php",
+		"/C/AppServ/www/innditec.com/includes/ready.php",
+		"/D/diseño y animacion/html css/menus/ResponsiveRetinaReadyMenu/index.html",
+		"/C/AppServ/www/innditec.com/pag/content.php",
+		"/C/AppServ/www/innditec.com/js/maps.js",
+		"/C/AppServ/www/ecotripschile.com/.htaccess",
+		"/C/AppServ/www/ecotripschile.com/index.php",
+		"/C/AppServ/www/ecotripschile.com/contenido.php",
+		"/C/AppServ/www/ecotripschile.com/metas.php",
+		"/C/AppServ/www/ecotripschile.com/pag/enlaces.php",
+		"/C/AppServ/www/ecotripschile.com/pag/1.php",
+		"/C/AppServ/www/gopolinesia.com/index.php",
+		"/C/Users/Juan/AppData/Roaming/Sublime Text 3/Packages/User/CSS.sublime-settings",
+		"/C/Users/Juan/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/AppServ/www/innditec.com/inuma.cs",
+		"/C/AppServ/www/innditec.com/prueba.cs",
+		"/C/Users/Juan/AppData/Roaming/Sublime Text 3/Packages/User/ejecutarC#.sublime-build",
+		"/C/Users/Juan/AppData/Roaming/Sublime Text 3/Packages/User/ejecutarJava.sublime-build",
+		"/C/AppServ/www/innditec.com/pag/cotizacion.php",
+		"/C/AppServ/www/innditec.com/pag/contacto.php",
+		"/C/AppServ/www/innditec.com/componentes/proceso-contacto.php",
+		"/C/AppServ/www/innditec.com/componentes/proceso-portada.php",
+		"/C/AppServ/www/innditec.com/pag/desarrollo.php",
+		"/C/AppServ/www/innditec.com/pag/soporte.php",
+		"/C/AppServ/www/innditec.com/pag/social.php",
+		"/D/diseño y animacion/html css/menus/ResponsiveRetinaReadyMenu/css/component.css",
+		"/D/diseño y animacion/html css/menus/ResponsiveRetinaReadyMenu/css/default.css",
+		"/C/AppServ/www/innditec.com/css/base.css",
+		"/C/AppServ/www/innditec.com/css/tablet.css",
+		"/C/AppServ/www/innditec.com/includes/texto_seo.php",
+		"/C/AppServ/www/html5/css/css.css",
+		"/D/diseño y animacion/html css/menus/ResponsiveMultiLevelMenu/index.html",
+		"/D/diseño y animacion/html css/menus/MultiLevelPushMenu/css/demo.css",
+		"/D/diseño y animacion/html css/menus/MultiLevelPushMenu/index.html",
+		"/D/diseño y animacion/html css/menus/MultiLevelPushMenu/css/component.css",
+		"/H/pro/proceso/proceso.php",
+		"/C/AppServ/www/innditec.com/componentes/proceso_port.php",
+		"/H/pro/portafolio.php",
+		"/H/innditec/pag/proceso.php",
+		"/C/Users/Juan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/nodejs/1/hola.js",
+		"/C/AppServ/www/100tags/index.php",
+		"/C/AppServ/www/ayah/ayah_config.php",
+		"/C/AppServ/www/innditec.com/pag/conocenos.php",
+		"/C/AppServ/www/relojes/principal.php",
+		"/C/AppServ/www/relojes/index.error.php",
+		"/C/AppServ/www/relojes/index.php",
+		"/C/AppServ/www/relojes/stylos.css",
+		"/C/AppServ/www/relojes/Connections/conex.php",
+		"/C/AppServ/www/responsive/css/css.css",
+		"/C/AppServ/www/innditec.com/pag/portada.php",
+		"/C/AppServ/www/pruebas/pro/proceso/proceso.php",
+		"/C/AppServ/www/pruebas/pro/conectar/conectar.php",
+		"/G/innditec/pag/proceso.php",
+		"/G/innditec/pag/portafolio.php",
+		"/C/AppServ/www/innditec.com/flaco.js",
+		"/C/AppServ/www/pruebas/envia-correo-jquery/envio.php",
+		"/C/AppServ/www/pruebas/jquery-form/index.html",
+		"/C/AppServ/www/pruebas/envia-correo-jquery/index.html",
+		"/C/AppServ/www/pruebas/loadcontent/index.php",
+		"/C/AppServ/www/pruebas/loadcontent/ajax_content.php",
+		"/C/AppServ/www/pruebas/loadcontent/conexion.php",
+		"/C/AppServ/www/pruebas/loadcontent/basedatos.php",
+		"/C/AppServ/www/pruebas/jquery-form/envio.php",
+		"/C/AppServ/www/pruebas/animate.css-master/index.html",
+		"/C/AppServ/www/pruebas/animate.css-master/animate.css",
+		"/C/AppServ/www/pruebas/animate.css-master/source/_base.css",
+		"/C/AppServ/www/pruebas/animate.css-master/source/attention_seekers/bounce.css",
+		"/D/diseño y animacion/html css/Animaciones/animate.css-master/source/_base.css",
+		"/D/diseño y animacion/html css/Animaciones/animate.css-master/source/attention_seekers/bounce.css",
+		"/C/AppServ/www/innditec.com/js/jquery.validate.js",
+		"/C/AppServ/www/innditec.com/js/jquery.validate.min.js",
+		"/C/AppServ/www/innditec.com/pag/contacto2.php",
+		"/C/AppServ/www/innditec.com/proceso_port.php",
+		"/C/AppServ/www/innditec.com/pag/portafolio.php",
+		"/C/AppServ/www/innditec.com/js/flaco",
+		"/C/AppServ/www/pruebas/pro/portafolio.php",
+		"/C/AppServ/www/pruebas/pro/proceso.php",
+		"/C/AppServ/www/innditec.com/pr.html",
+		"/H/Facilito Diseño Web/cursoHotel/js/main.js",
+		"/H/Facilito Diseño Web/cursoHotel/css/style.css",
+		"/H/Facilito Diseño Web/cursoHotel/index.html",
+		"/H/Facilito Diseño Web/cursoHotel/css/main.css",
+		"/C/AppServ/www/hotelsamiriajungle.com/pag/reservaciones.php",
+		"/C/AppServ/www/upi.edu.pe/includes/nav.php",
+		"/C/AppServ/www/upi.edu.pe/includes/titulos_center.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/pag/contactanos.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/lang_es.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/css/css.css",
+		"/C/AppServ/www/upi.edu.pe/css/responsiveslides.css",
+		"/C/AppServ/www/upi.edu.pe/css/base2.css",
+		"/C/AppServ/www/amazonecoexplorer2.com/index.php",
+		"/C/AppServ/www/innditec.com/includes/slideshow.php",
+		"/C/AppServ/www/upi.edu.pe/css/base.css",
+		"/D/diseño y animacion/webfonts/Existence-Light-fontfacekit/web fonts/existence_light_macroman/stylesheet.css",
+		"/D/diseño y animacion/webfonts/Existence-Light-fontfacekit/web fonts/existence_stencillight_macroman/stylesheet.css",
+		"/D/diseño y animacion/webfonts/Existence-Light-fontfacekit/web fonts/existence_stencillight_macroman/Existence-StencilLight-demo.html",
+		"/C/AppServ/www/hotelsamiriajungle.com/includes/content_contacto.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/comp/all.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/comp/procesar_contacto.php",
+		"/C/AppServ/www/hotelsamiriajungle.com/comp/procesar_detalle.php",
+		"/C/AppServ/www/pruebas/game/index.html",
+		"/C/AppServ/www/upi.edu.pe/index2.php",
+		"/C/AppServ/www/pruebas/html5-css3-contact-form/index.php",
+		"/C/AppServ/www/pruebas/capitalizacion/resbusqueda.php",
+		"/C/AppServ/www/pruebas/capitalizacion/guardardatos.php",
+		"/C/AppServ/www/pruebas/probando2/index.html",
+		"/C/AppServ/www/pruebas/capitalizacion/funciones/conectar.php",
+		"/C/AppServ/www/pruebas/capitalizacion/fmodificar.php",
+		"/C/AppServ/www/pruebas/probando2/sugerencia2.php",
+		"/C/AppServ/www/pruebas/probando2/ajax.js",
+		"/C/AppServ/www/pruebas/probando2/conectbd.php",
+		"/C/Users/Juan/Downloads/Compressed/minimum/app/index.html",
+		"/C/Users/Juan/Downloads/Compressed/minimum/app/page1.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"opcionesMapa",
+			"}",
+			"}\n",
+			";\n",
+			"\">\n",
+			"		",
+			";}",
+			"height",
+			"Tigre"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\AppServ\\www\\innditec.com"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2353,
+								2353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 534.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1024,
+								1024
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3304,
+								3304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 24.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

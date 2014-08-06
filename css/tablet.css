@@ -1,0 +1,36 @@
+header
+{
+	background:url(../img/logo.png) no-repeat 1% center , #23262A;
+	background-size:80px;
+	margin:auto;
+	padding-top:0.2%;
+	width:100%;
+}
+nav ul
+{
+	padding: 0;
+}
+nav li
+{
+	border: 1px solid #393939;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 1px 0.3em 1px;
+	padding:7px 1px;
+	text-align: center;
+	vertical-align: top;
+	width:auto;
+}
+nav li p
+{
+	display: none;
+}
+#content
+{	
+	width:100%;
+}
+#servicios article
+{
+	margin:auto;
+	width:100%;
+}

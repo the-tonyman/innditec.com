@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsslide" value="name:slideID;datatype:int,name:img_slide;datatype:string,name:caption;datatype:string" />
+</info>

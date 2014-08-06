@@ -1,0 +1,111 @@
+header
+{
+	background:url(../img/logo.png) no-repeat 1% center , #23262A;
+	background-size:80px;
+	margin:auto;
+	padding-top:0.2%;
+	width:100%;
+}
+nav ul
+{
+	padding: 0;
+}
+nav li
+{
+	border: 1px solid #393939;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 1px 0.3em 1px;
+	padding:7px 1px;
+	text-align: center;
+	vertical-align: top;
+	width:auto;
+}
+nav li p
+{
+	display: none;
+}
+#content
+{	
+	width:100%;
+}
+#servicios article
+{
+	margin:auto;
+	width:100%;
+}
+
+
+
+	/* Unhiding the styled menu link */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;
+	}
+	
+	/* Animating the height of the navigation when the button is clicked */
+	
+	/* When JavaScript is disabled, we hide the menu */
+	.no-js .nav ul {
+		max-height: 30em;
+		overflow: hidden;
+	}
+	
+	/* When JavaScript is enabled, we hide the menu */
+	.js .nav ul {
+		max-height: 0em;
+		overflow: hidden;
+	}
+	
+	/* Displaying the menu when the user has clicked on the button*/
+	.js .nav .active + ul {		
+		max-height: 30em;
+		overflow: hidden;
+		transition: max-height .4s;
+	}
+
+	/* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+	
+	.nav li span {
+		display: inline-block;
+		height: 100%;
+	}
+
+	.nav a {
+		padding: 0.5em;		
+	}
+	
+	.icon + span {
+		margin-left: 1em;
+		font-size: 0.8em;
+	}
+	
+	/* Adding a left border of 8 px with a different color for each menu item*/
+	.nav li:nth-child(6n+1) {
+		border-left: 8px solid rgb(174, 78, 1);
+	}
+
+	.nav li:nth-child(6n+2) {
+		border-left: 8px solid rgb(191, 117, 20);
+	}
+
+	.nav li:nth-child(6n+3) {
+		border-left: 8px solid rgb(13, 111, 150);
+	}
+
+	.nav li:nth-child(6n+4) {
+		border-left: 8px solid rgb(10, 75, 117);
+	}
+
+	.nav li:nth-child(6n+5) {
+		border-left: 8px solid rgb(16, 34, 44);
+	}
+
+	.nav li:nth-child(6n+6) {
+		border-left: 8px solid rgb(9, 18, 25);
+	}
+
+	/* make the nav bigger on touch screens */
+	.touch .nav a {
+		padding: 0.8em;
+	}

@@ -1,0 +1,300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"fot",
+				"font-weight"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"if",
+				"isFunction"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/AppServ/www/munitigre.gob.pe/pag/gestion.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/gestion2.php",
+		"/C/AppServ/www/munitigre.gob.pe/index.php",
+		"/C/AppServ/www/munitigre.gob.pe/includes/slideshow.php",
+		"/C/AppServ/www/munitigre.gob.pe/css/flexslider.css",
+		"/C/AppServ/www/munitigre.gob.pe/connections/cnxtigre2.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/content.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/gestion3.php",
+		"/C/AppServ/www/pruebas/jqueryyajax/ajaxcompleto.php",
+		"/C/AppServ/www/pruebas/jqueryyajax/ajaxcompleto.html",
+		"/C/AppServ/www/munitigre.gob.pe/componentes/left.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/tu_municipio.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/rentas.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/tesoreria.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/sociales.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/registro_civil.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/urbano.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/secretaria.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/publicos.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/planeamiento.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/personal.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/legal.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/inversion.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/generales.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/contabilidad.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/juridica.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/control.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/concejo.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/alcaldia.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/oficinas/administracion.php",
+		"/C/AppServ/www/munitigre.gob.pe/componentes/footer.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/galeria.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/gestion_detalle.php",
+		"/C/AppServ/www/munitigre.gob.pe/pag/gestion_detalle",
+		"/C/AppServ/www/munitigre.gob.pe/pag/noticias_detalle.php",
+		"/D/diseño y animacion/html css/ventana modal/ModalWindowEffects - copia/css/default.css",
+		"/D/diseño y animacion/html css/ventana modal/ModalWindowEffects - copia/index.html",
+		"/D/diseño y animacion/html css/ventana modal/ModalWindowEffects - copia/css/component.css",
+		"/C/AppServ/www/munitigre.gob.pe/pag/noticias.php",
+		"/D/diseño y animacion/html css/ventana modal/ModalWindowEffects/js/modalEffects.js",
+		"/C/AppServ/www/abm/Base de datos.sql",
+		"/C/AppServ/www/munieltigre.gob.pe/index.php",
+		"/C/AppServ/www/munieltigre.gob.pe/pag/tu_municipio.php",
+		"/C/AppServ/www/munieltigre.gob.pe/css/base",
+		"/C/AppServ/www/munieltigre.gob.pe/.htaccess",
+		"/C/AppServ/www/innditec.com/index.php",
+		"/C/AppServ/www/innditec.com/componentes/footer.php",
+		"/C/AppServ/www/innditec.com/css/base.css",
+		"/C/AppServ/www/sublime/index.html",
+		"/D/prueba.php",
+		"/C/Program Files/Sublime Text 3/Packages/.codeintel/config"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Tecnológico",
+			";\n",
+			"Tigre"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "flaco.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
