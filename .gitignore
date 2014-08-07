@@ -35,6 +35,7 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+<<<<<<< HEAD
 
 0000/slides/desarrollo-web-iquitos-innditec.png
 0000/slides/1319101493_114893172_1--REPARACION-DE-EQUIPO-DE-COMPUTO--Playas-de-Tijuana-Seccion-Jardines.jpg.gif
@@ -85,3 +86,6 @@ Icon
 0000/logo/fondos/indditec3.jpg
 0000/logo/fondos/Nueva carpeta/indditec3.jpg
 0000/logo/logo (2).jpg
+=======
+/nbproject/private/
+>>>>>>> origin/master

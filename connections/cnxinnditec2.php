@@ -3,9 +3,9 @@
 # Type="MYSQL"
 # HTTP="true"
 $hostname_cnxinnditec = "localhost";
-$database_cnxinnditec = "db_innditec";
-$username_cnxinnditec = "tonyman";
-$password_cnxinnditec = "tonyman";
+$database_cnxinnditec = "innditec_db";
+$username_cnxinnditec = "root";
+$password_cnxinnditec = "";
 $cnxinnditec = mysql_pconnect($hostname_cnxinnditec, $username_cnxinnditec, $password_cnxinnditec) or trigger_error(mysql_error(),E_USER_ERROR); 
 
 $query_rsUTF8 = sprintf("SET NAMES '%s'", "utf8");
