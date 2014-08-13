@@ -1,13 +1,23 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    </head>
+    <body>
 <?php 
+//include('../Admin/lib/conexion.php');
 require('../connections/cnxinnditec2.php');
 mysql_select_db($database_cnxinnditec, $cnxinnditec);	
 									//conexion a la base de datos upi
-$cantires=10;
+//$cantires=10;
+$cantires=4;
 $numero_recibido=$_GET["numero"];
 									//variable recibida por url "numero" (enviado con ajax)
 $limite=($numero_recibido*$cantires)-$cantires;
 									//$limite= cantidad para el limite de consulta LIMIT
 $consulta=mysql_query("SELECT * FROM proyectos",$cnxinnditec);
+
 									//$consulta=consulta mysql a la tabla de nombre recibida			
 $filas_resultado_total = mysql_num_rows($consulta);						
 									//$filas_resultado= almacena la cantidad de filas que muestra el resultado de la consulta
@@ -30,7 +40,11 @@ for($i=0;$i<$canfilinfo;$i++){
 				echo "<h3><a href='$resultado[5]'>$resultado[1]</a></h3>";
 				echo "<p> $resultado[3] <br> $resultado[4] </p>";
 			echo "</div>";
-		echo "<img src='img/trabajos_web/ready/$resultado[2]' alt='$resultado[2]'/>";
+            echo"<img src=Admin/pag/$resultado[2] width=60 height=160>";
+                       
+                       
+              
+                   
 	echo "</figure>";
 }
 
@@ -73,3 +87,6 @@ echo "<article class='portafolio'>";
 	echo "</ul>";
 echo "</article>";
 	?>
+
+        </body>
+</html>
