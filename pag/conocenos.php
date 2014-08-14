@@ -2,7 +2,23 @@
 <p>Somos una empresa joven </p>
 <p>Cada uno de los miembros del equipo de <strong>Innditec</strong> esta en continua capacitación, utilizamos lo último en <strong>tecnologías web</strong> para el correcto y óptimo desarrrollo de su <strong>página web</strong></p>
 <figure class="conocenos">
-	<img src="img/somos_mas/anthony_ramirez_frontend_innditec.jpg" alt="Lic. Anthony Ramirez Grandez" />
+	<img src="img/somos_mas/alme.jpg" alt="Almendra Alessandra Saavedra Freitas" />
+    <div>
+        <h4>Almendra Alessandra Saavedra Freitas</h4>
+        <p>twitter</p>
+        <p>Diseñadora web con manejo de fireworks.</p>
+    </div>
+</figure>
+<figure class="conocenos">
+    <img src="img/somos_mas/justin.jpg" alt="Albert Paul Dustin Navarro Marapara" />
+    <div>
+        <h4>Albert Paul Dustin Navarro Marapara</h4>
+        <p>twitter</p>
+        <p>Especialista en windows, desarrollo de aplicaciones empresariales con visual studio.net, c#, php y mysql python y proximamente java, gamer, dj, amante de la naturaleza.</p>
+    </div>
+</figure>
+<figure class="conocenos">
+    <img src="img/somos_mas/anthony_ramirez_frontend_innditec.jpg" alt="Lic. Anthony Ramirez Grandez" />
     <div>
         <h4>Lic. Anthony Ramirez Grandez</h4>
         <p>twitter</p>
@@ -10,25 +26,17 @@
     </div>
 </figure>
 <figure class="conocenos">
-	<img src="img/somos_mas/guigo_pinedo_pacaya_backend.jpg" alt="Bach. Guido Pinedo Pacaya" />
+    <img src="img/somos_mas/mario.jpg" alt="Lic. Lorenzo Capuena Arirama" />
     <div>
-        <h4>Bach. Guido Pinedo Pacaya</h4>
-        <p>twitter</p>
-        <p>Programador en php, python y proximamente en java que le permiten elaborar aplicaciones web 2.0, alta capacidad analítica para la automatización de procesos y creatividad para desarrolar aplicativos</p>
+        <h4>Lic. Lorenzo Capuena Arirama</h4>
+        <p>Programador en Php, javascript, jquery y proximamente en nodejs, amante del hentai</p>
     </div>
 </figure>
 <figure class="conocenos">
-	<img src="img/somos_mas/otoniel_sandoval_cauper_backend.jpg" alt="Bach. Renato Sandoval Cauper" />
+	<img src="img/somos_mas/martha.jpg" alt="Manoel Alfredo Casanova Olortegui" />
     <div>
-        <h4>Bach. Renato Sandoval Cauper</h4>
+        <h4>Manoel Alfredo Casanova Olortegui</h4>
         <p>twitter</p>
-        <p>Programador en php, javascript y dentro de poco jquery, manejo de blender para animaciones 3D, dominio de Mysql, apasionado del diseño gráfico y del dibujo tribal</p>
+        <p>Programador javascript y jquery</p>
     </div>
 </figure>
-<!--<figure class="conocenos">
-	<img src="img/somos_mas/perfil.jpg" alt="Lic. Lorenzo Capuena Arirama" />
-    <div>
-        <h4>Lic. Lorenzo Capuena Arirama</h4>
-        <p>Programador en Php, .Net y otros lenguajes que le permiten elaborar aplicaciones web 2.0</p>
-    </div>
-</figure>-->
