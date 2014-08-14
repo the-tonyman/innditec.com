@@ -264,10 +264,26 @@
 			}
 		},
 		{
+			"file": "componentes/proceso_port.php",
+			"settings":
+			{
+				"buffer_size": 3106,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.php",
 			"settings":
 			{
 				"buffer_size": 2170,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/flaco.js",
+			"settings":
+			{
+				"buffer_size": 2952,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,7 +299,7 @@
 	"build_system": "Packages/User/ejecutarC#.sublime-build",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 58.0,
 		"selected_items":
 		[
 			[
@@ -307,7 +323,7 @@
 				"Set Syntax: Regular Expressions (Python)"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -327,6 +343,9 @@
 	},
 	"file_history":
 	[
+		"/C/AppServ/www/innditec.com/admin/lib/conexion.php",
+		"/C/AppServ/www/innditec.com/pag/portafolio.php",
+		"/C/AppServ/www/innditec.com/pag/content.php",
 		"/C/AppServ/www/innditec.com/pydio/plugins/access.mysql/class.mysqlAccessDriver.php",
 		"/C/AppServ/www/innditec.com/pydio/conf/bootstrap_context.php",
 		"/C/AppServ/www/innditec.com/includes/redes_portada.php",
@@ -344,7 +363,6 @@
 		"/C/AppServ/www/innditec.com/includes/servicios.php",
 		"/C/AppServ/www/innditec.com/includes/ready.php",
 		"/D/diseño y animacion/html css/menus/ResponsiveRetinaReadyMenu/index.html",
-		"/C/AppServ/www/innditec.com/pag/content.php",
 		"/C/AppServ/www/innditec.com/js/maps.js",
 		"/C/AppServ/www/ecotripschile.com/.htaccess",
 		"/C/AppServ/www/ecotripschile.com/index.php",
@@ -415,7 +433,6 @@
 		"/C/AppServ/www/innditec.com/js/jquery.validate.min.js",
 		"/C/AppServ/www/innditec.com/pag/contacto2.php",
 		"/C/AppServ/www/innditec.com/proceso_port.php",
-		"/C/AppServ/www/innditec.com/pag/portafolio.php",
 		"/C/AppServ/www/innditec.com/js/flaco",
 		"/C/AppServ/www/pruebas/pro/portafolio.php",
 		"/C/AppServ/www/pruebas/pro/proceso.php",
@@ -453,8 +470,7 @@
 		"/C/AppServ/www/pruebas/probando2/sugerencia2.php",
 		"/C/AppServ/www/pruebas/probando2/ajax.js",
 		"/C/AppServ/www/pruebas/probando2/conectbd.php",
-		"/C/Users/Juan/Downloads/Compressed/minimum/app/index.html",
-		"/C/Users/Juan/Downloads/Compressed/minimum/app/page1.html"
+		"/C/Users/Juan/Downloads/Compressed/minimum/app/index.html"
 	],
 	"find":
 	{
@@ -506,7 +522,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -532,13 +548,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 534.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "componentes/proceso_port.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "index.php",
 					"semi_transient": false,
 					"settings":
@@ -550,8 +593,8 @@
 						"selection":
 						[
 							[
-								1024,
-								1024
+								42,
+								70
 							]
 						],
 						"settings":
@@ -567,7 +610,36 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "js/flaco.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"semi_transient": false,
 					"settings":
 					{

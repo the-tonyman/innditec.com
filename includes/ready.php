@@ -7,7 +7,7 @@
                 <div class="element">
                   <a href="<?php echo $row_rsproyecto['url_proyecto']; ?>">
                     <div class="img">
-                      <img src="img/trabajos_web/ready/<?php echo $row_rsproyecto['img_proyecto']; ?>" alt="" />
+                         <img src="Admin/pag/<?php echo $row_rsproyecto['img_proyecto']; ?>" alt="" />
                     </div>
                     <div class="description">
                       <p><?php echo $row_rsproyecto['descrip_proyecto_portada']; ?></p>

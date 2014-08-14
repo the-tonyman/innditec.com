@@ -9,33 +9,34 @@ session_start();
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <div>INTRODUCE TU USUARIO Y PASSWORD</div>
-        
+               
         <?php
         if(!isset($_SESSION['usuario']))
         {
         ?>  
-        
+  <center> 
+      <div>INTRODUCE TU USUARIO Y PASSWORD</div>
         <form action="login.php" method="post" onsubmit="return validarForm($this);" enctype="multipart/form-data">         
            
-        <table>
-           
-            <tr>
-                <td>Usuario</td>
-                <td>:</td>
-                <td><input type="text" value="" name="usuario" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>:</td>
-                <td><input type="password" value="" name="password1" required></td>
-            </tr>
-          
-                
-                <td colspan="3"><input type="submit" value="Ingresar"></td>
-            </tr>
-        </table>
+            <table>
+
+                <tr>
+                    <td>Usuario</td>
+                    <td>:</td>
+                    <td><input type="text" value="" name="usuario" placeholder="Digite su usuario" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" value="" name="password1" placeholder="Digite su Password" required></td>
+                </tr>
+
+
+                    <td colspan="3"><input type="submit" value="Ingresar"></td>
+                </tr>
+            </table>
         </form>
+  </center>
          <?php
                         
         }else
@@ -49,6 +50,6 @@ session_start();
         
      ?>       
         <br>
-     <a href="frm_registro.php">Registrate</a>  
+     <center><a href="frm_registro.php">Registrate</a> </center> 
     </body>
 </html>

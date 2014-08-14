@@ -1,7 +1,16 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    </head>
+    <body>
 <h1 class="title_general">PORTAFOLIO</h1>
 <section id="portafolio">
 	
 </section>
+</body>
+</html>
 <!--<figure class="portafolio">
 	<div>
         <h3><a href="http://www.amazomecoexplorer.com">AMAZONECOEXPLORER.COM</a></h3>

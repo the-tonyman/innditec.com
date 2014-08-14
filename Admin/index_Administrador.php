@@ -7,24 +7,24 @@ session_start();
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <link rel="stylesheet" href="css/estilo.css">
+         <link rel="stylesheet" href="resource/estilo1.css">
          
          
             
    <body>        
        <center><h1>Sistema de Manejo de Contenido </h1>        
        <h1>INNDITEC</h1></center>
-   </body>
+   
     
      <?php
                 if(isset($_SESSION['usuario']))
             {           
-        
+                echo '<center><h2>Bienvenido Administrador(a) : '.$_SESSION['usuario'].'<h2></center>';
             ?>
-                <center><img src="<?php echo $_SESSION['imagen'] ;?>" width="70" height="45" border="3"></center><br>        
+                <center><img src="<?php echo $_SESSION['imagen'] ;?>" width="70" height="45" border="3"></center>      
      
             <?php
-                    echo '<center><h2>Bienvenido Administrador(a) : '.$_SESSION['usuario'].'<h2></center><br>';
+                    
              
                 }else
             
@@ -52,10 +52,24 @@ session_start();
         <?php    
             }
         ?>
-            
-            
+   <br>
+   
+   <div id="items">
+        Items
+        <ul>
+            <li><a href="pag/novedades.php">Novedades</li>
+            <li><a href="pag/productos.php">Productos</li>
+            <li><a href="pag/proyectos.php">Proyectos</li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="pag/conocenos.php">Conocenos</a></li>
+        </ul>
+   </div>
+   
+   <center><img src="imagenes/logo.png"></center>
+   
+   
       
     
-       
+</body>       
     
 </html>
